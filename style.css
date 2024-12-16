@@ -48,6 +48,46 @@ header nav ul li a:hover,
 header nav ul li a.active {
     color: #f4b400;
 }
+/* Default navigation styles */
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Mobile menu toggle button */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 24px;
+    color: white;
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
 
 /* Profile Photo */
 .profile-photo {
@@ -292,6 +332,16 @@ section ul {
 .certificate-photo:hover {
     transform: scale(1.1);
 }
+/* Contact Section Links Styling */
+#contact a {
+    color: #f4b400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
 
 /* Resume Button */
 .resume-btn {
@@ -299,7 +349,7 @@ section ul {
     margin-top: 1rem;
     padding: 10px 20px;
     background: #f4b400;
-    color: #fff;
+    color: #4285f4;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
@@ -307,7 +357,7 @@ section ul {
 }
 
 .resume-btn:hover {
-    background: #333;
+    background: #1d1b31;
 }
 
 /* Footer */
